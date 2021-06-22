@@ -1,0 +1,926 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 活跃的样式 */
+.active {
+  /* color: yellow; */
+  font-size: 28rpx;
+  display: inline-block;
+  border-bottom: 3px solid green;
+  /* border-radius: 20rpx; */
+  /* position: absolute; */
+  /* left: 0; */
+}
+.activeWork {
+  color: green;
+}
+/* 排序活跃的样式 */
+.sortActive {
+  color: green;
+}
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 75rpx;
+  width: 100vw;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.header .leftIcon {
+  /* display: flex; */
+  /* align-items: center; */
+  padding-top: 16rpx;
+  padding-left: 16rpx;
+}
+.header .right {
+  margin-left: 10rpx;
+}
+.leftIcon image {
+  width: 75rpx;
+  height: 65rpx;
+}
+.header .bottomBox {
+  font-size: 14rpx;
+  color: #9e9fa3;
+  /* transform: translate(0.3); */
+}
+.header .topBox text {
+  font-size: 26rpx;
+  font-weight: 700;
+}
+.header .topBox text:nth-child(2) {
+  margin: 0 10rpx;
+}
+/* 搜索 */
+.search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 16rpx 30rpx;
+  height: 60rpx;
+}
+.search .address {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.search .iconfont {
+  font-size: 30rpx;
+}
+.search .address .text {
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  font-weight: 550;
+}
+.search .searchBox {
+  -webkit-box-flex: 12;
+  -webkit-flex: 12;
+          flex: 12;
+  background-color: #eee;
+  border-radius: 25rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 60rpx;
+  color: #898999;
+}
+.search .searchBox .icon-search {
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+.search .searchBox .text1 {
+  font-size: 20rpx;
+}
+.search .qiandao {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+}
+.search .qiandao image {
+  width: 100%;
+  /* height: 100%; */
+  height: 60rpx;
+}
+/* 选项卡 */
+.seceltCard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.seceltCard .card {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  width: 25%;
+  margin: 10rpx;
+  font-size: 18rpx;
+  text-align: center;
+}
+.seceltCard .card image {
+  width: 80%;
+  /* height: 100%; */
+  height: 80rpx;
+}
+/* 轮播图 */
+.scrollx {
+  /* 滚动视口的高度 */
+  width: 100vw;
+  height: 220rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.scroll1 {
+  margin: 40rpx 0;
+}
+.scroll {
+  /* 可滚动的距离 */
+  width: 1725rpx;
+}
+.scrollx image {
+  margin-left: 30rpx;
+  width: 525rpx;
+  height: 225rpx;
+}
+/* 团子精选 */
+.selects {
+  width: 210rpx;
+  height: 90rpx;
+}
+.selects image {
+  width: 100%;
+  height: 100%;
+}
+/* 推荐 */
+.textScroll {
+  /* display: flex; */
+  width: 750rpx;
+  height: 66rpx;
+}
+.scrollxx {
+  width: 1300rpx;
+  /* width: 24rpx; */
+  font-size: 24rpx;
+  /* height: 100rpx; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.scrollxx navigator {
+  margin: 0 30rpx;
+  height: 55rpx;
+}
+.uTabs {
+  font-size: 24rpx;
+  color: red;
+}
+.btn3 {
+  float: right;
+  margin-right: 20rpx;
+}
+.btn1 {
+  margin: 0 15rpx;
+}
+/* 帅选 */
+.getChose .head {
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  /* justify-content: center; */
+}
+.getChose .head .headtitle {
+  /* text-align: center; */
+  /* line-height: 55rpx; */
+  /* display: inline-block; */
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+          flex: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-weight: 600;
+}
+.works .head {
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.sort .head {
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.head .headtitle {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+          flex: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-weight: 600;
+}
+.getChose .head .headCancel {
+  /* float: right; */
+  /* display: inline-block; */
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 18rpx;
+  color: #9e9fa3;
+}
+.head .headCancel {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 18rpx;
+  color: #9e9fa3;
+}
+/* tag标签 */
+.u-tag {
+  width: 220rpx;
+  height: 50rpx;
+  margin: 20rpx 0rpx 0 20rpx;
+
+  text-align: center;
+  line-height: 50rpx !important;
+  /* vertical-align: center; */
+}
+/* 筛选的重置和确定按钮 */
+.tagbtn {
+  /* display: flex; */
+  margin: 60rpx 20rpx;
+}
+.tagbtn .sure {
+  float: right;
+}
+.tagbtn .reset {
+  /* flex: 3; */
+  width: 225rpx !important;
+}
+/* title筛选 */
+.workareaTitle {
+  margin: 15rpx 20rpx;
+}
+.workareaTitle:nth-child(1) {
+  margin: 0 20rpx;
+}
+/* 全部类型 岗位类型
+ */
+.workScroll {
+  height: 700rpx;
+}
+.scrolly {
+  height: 820rpx;
+}
+.scrolly .scrolly-item {
+  margin: 35rpx 30rpx;
+}
+.scrollwork {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.scrollwork .workScroll {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+}
+::webkit-scrollbar {
+  width: 0;
+}
+.scrollwork .all {
+  -webkit-box-flex: 8;
+  -webkit-flex: 8;
+          flex: 8;
+  background-color: #ccc;
+  border-radius: 25rpx;
+  margin-right: 20rpx;
+  padding: 25rpx;
+}
+.scrollwork .all view {
+  margin: 15rpx;
+}
+.sorts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.sorts .sortss {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 25rpx 0;
+  font-size: 22rpx;
+}
+.foot-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 20rpx;
+  background-color: #ffffff;
+  margin: 20rpx 20rpx;
+  border-radius: 15rpx;
+}
+.foot-item .footLeft {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+          flex: 7;
+  font-size: 22rpx;
+}
+.foot-item .footLeft .business {
+  color: #a3a3a3;
+  font-size: 18rpx;
+}
+.foot-item .footRight {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  color: #e56873;
+}
+.content {
+  background-color: #f4f3f8;
+}
+.recommend {
+  background-color: #ffffff;
+}
+.btn {
+  background-color: #ffffff;
+  padding-bottom: 20rpx;
+}
+.refreshBtn {
+  width: 375rpx;
+  height: 90rpx;
+  margin: 30rpx 175rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  border-radius: 30rpx;
+}
+.refreshBtn .u-icon {
+  background-color: #1aa034;
+  border-radius: 50%;
+  color: black;
+}
+.btn {
+  margin-right: 30rpx;
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
